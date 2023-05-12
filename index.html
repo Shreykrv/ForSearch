@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Random Search</title>
+    <script>
+      function randomSearch() {
+        var queries = [
+          "cats",
+	"tiger",
+"chocolate",
+"banana",
+"pineapple",
+"lemon",
+"blueberry",
+"kiwi",
+"pomegranate",
+"apricot",
+"pear",
+"watermelon",
+"grapefruit",
+"blackberry",
+"mango",
+"peach",
+"raspberry",
+"strawberry",
+"avocado",
+"orange",
+"apple",
+"plum",
+"guava",
+"cherry",
+"coconut",
+"dragonfruit",
+"fig",
+"grape",
+"kiwano",
+"lime",
+"nectarine",
+"olive",
+"persimmon",
+"quince",
+"tangerine",
+"ugli fruit",
+"vanilla",
+"walnut",
+"yam",
+"zucchini",
+"almond",
+"bean",
+"carrot",
+"date",
+"eggplant",
+"fennel",
+"ginger",
+"hazelnut",
+"jalapeno",
+"kale",
+"lettuce",
+"mushroom",
+"nutmeg",
+"onion",
+"parsley",
+"quinoa",
+"radish",
+"spinach",
+"tomato",
+"urad bean",
+"vanilla bean",
+"watercress",
+"xigua",
+"yellow squash",
+"zinfandel grape",
+"albacore tuna",
+"bell pepper",
+"cabbage",
+"dill",
+"endive",
+"fava bean",
+"grape leaves",
+"honeydew",
+"iceberg lettuce",
+"jicama",
+"kumquat",
+"lentil",
+"miso",
+"nasturtium",
+"okra",
+"papaya",
+"quail egg",
+"rosemary",
+"sage",
+"thyme",
+"udon noodles",
+"violet",
+"wasabi",
+"xigua melon",
+"yucca",
+"zander fish",
+"achiote",
+"basil",
+"caper",
+"dulse",
+"elderberry",
+"fiddlehead fern",
+"grits",
+"hibiscus",
+"jaggery",
+"kudzu",
+"lavender",
+
+
+          "dogs",
+          "flowers",
+          "pizza",
+          "beaches",
+          "mountains",
+          "movies",
+          "books",
+          "sports",
+          "news"
+        ];
+        var query = queries[Math
+.floor(Math.random() * queries.length)];
+        window.open("https://www.bing.com/search?q=" + query, "_self");
+      }
+function generateRandomStrings(length, count) {
+  let strings = [];
+  for (let i = 0; i < count; i++) {
+    let string = "";
+    for (let j = 0; j < length; j++) {
+      string += String.fromCharCode(Math.floor(Math.random() * 26) + 97);
+    }
+    strings.push(string);
+  }
+  return strings;
+}
+
+let randomStrings = generateRandomStrings(4, 100);
+console.log(randomStrings);
+
+    </script>
+  </head>
+  <body>
+    <h1>Random Search</h1>
+    <p>Click the button below to generate a random search query.</p>
+    <button onclick="randomSearch()">Search</button>
+  </body>
+</html>
